@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IShouldActivity" >
+
+    <TextView
+        android:id="@+id/txt_iShould_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Should..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_selected"
+                android:text="Read" />
+
+            <RadioButton
+                android:id="@+id/radio_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_selected"
+                android:text="Watch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_selected"
+                android:text="Make" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radio_button_selected" />
+
+                <EditText
+                    android:id="@+id/etxt_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Other"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_thingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a(n):" />
+
+        <EditText
+            android:id="@+id/etxt_thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="thing" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/chbox_enableDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chbox_that_click" />
+
+        <TextView
+            android:id="@+id/txt_descriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="that:" />
+
+        <EditText
+            android:id="@+id/etxt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Description" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/chbox_enableFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chbox_with_click" />
+
+        <TextView
+            android:id="@+id/txt_friendsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="with:" />
+
+        <EditText
+            android:id="@+id/etxt_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Friends" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn_save_click"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/txt_output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TextView" />
+
+</LinearLayout>
